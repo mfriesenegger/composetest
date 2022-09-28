@@ -1,4 +1,4 @@
-FROM registry.suse.com/bci/bci-base:latest@sha256:335a1554259487006deda98169eacc600523a861c69794bafb553101dc58a843
+FROM registry.suse.com/bci/bci-base:15.4.27.11.27@sha256:335a1554259487006deda98169eacc600523a861c69794bafb553101dc58a843
 RUN zypper -n install -y redis
 RUN mkdir /data && chown redis:redis /data
 VOLUME /data
